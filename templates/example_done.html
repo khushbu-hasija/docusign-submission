@@ -1,0 +1,14 @@
+{% extends "base.html" %}  {% block content %}
+
+<h2>{{ h1 }}</h2>
+<p>{{ message | raw }}</p>
+
+{% if json %}
+<!-- Data from the server -->
+<div id="server_json_data" data-server-json-data='{"json": {{ json | raw }} }' class="hidden"></div>
+<p><pre class="json-display"><code id="json-display"></code></pre></p>
+{%  endif %}
+
+<p><a href="{{ app_url }}">Continue</a></p>
+
+{% endblock %}

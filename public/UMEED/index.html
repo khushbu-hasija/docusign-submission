@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Generate approval reciept</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: "en"}, 'google_translate_element');
+}
+
+function changeLanguageByButtonClick() {
+  var language = document.getElementById("language").value;
+  var selectField = document.querySelector("#google_translate_element select");
+  for(var i=0; i < selectField.children.length; i++){
+    var option = selectField.children[i];
+    // find desired langauge and change the former language of the hidden selection-field 
+    if(option.value==language){
+       selectField.selectedIndex = i;
+       // trigger change event afterwards to make google-lib translate this side
+       selectField.dispatchEvent(new Event('change'));
+       break;
+    }
+  }
+}
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<img src="umeed.jpeg">
+<br>
+<div id="google_translate_element" style="display:none"></div>
+<br>
+<nav style="padding-left:150px;padding-right: 150px;font-size:20px;" class="navbar navbar-expand-lg navbar-light bg-light" >
+
+    <ul style="align-content:center;" class="navbar-nav ml-auto">
+    
+
+    <li  class="nav-item">
+                    <select id = "language">
+                    <option value = "en" >English</option>
+                    <option value = "te">Telegu</option>
+                    <option value = "ur">Urdu</option>
+                    </select><button onclick="changeLanguageByButtonClick()">Translate</button>
+    </li>
+    </ul>
+</nav>
+
+<br>
+<h3 style="padding-left:150px;padding-right: 150px;">How many handicrafts did you prepare today?</h3>
+<div style="padding-left:150px;padding-right: 150px;">
+<a href="http://localhost:8080/public/index.php?page=eg002">
+<button type="button" class="btn  btn-lg btn-block">10 handicrafts</button>
+</a>
+<br>
+<button type="button" class="btn  btn-lg btn-block">20 handicrafts</button>
+<br>
+<button type="button" class="btn  btn-lg btn-block">30 handicrafts</button>
+
+  </div>
+  <br>
+</body>
+</html>
