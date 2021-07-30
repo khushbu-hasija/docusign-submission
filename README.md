@@ -7,7 +7,7 @@ Last year I got the opportunity to work for UMEED, a non-profit that empowers wo
 
 ## The problem
 
-The women working for the NPO needed a technology  solution that would record the number of handicrafts they make each day and present this record to their manager. The manager would then approve the work and only after the approval their weekly wages would be transferred to the workers. 
+The women working for the NPO needed a technology solution that would record the number of handicrafts they make each day and present this record to their manager. The manager would then approve the work and only after the approval their weekly wages would be transferred to the workers. 
 This process is manually carried out by the managers by checking the work after physically coming to the workplace and signing a receipt for each worker. This receipt was later shown to the cashier for getting their salary deposited. 
 
 ## The solution
@@ -19,8 +19,12 @@ My solution helps two users:
 
 ## How DocuSign comes into picture 
 
-The DocuSign API will be used by the women workers to input details such as their name,, the date, worker number, amount of handicrafts, images of the handicrafts prepared and this information will form their receipt for approval.
+The DocuSign API will be used by the women workers to input details such as their name, the date, worker number, amount of handicrafts, images of the handicrafts prepared and this information will form their receipt for approval.
 
 This receipt will be received by the managers and after complete verification they will be signed. Only the signed approval receipt will be eligible for payment.
 
 Thus the manual procedure is digitized
+
+## Further work
+
+I am aware this is only a small part of what DocuSign can do to help the non-profit. Sending documenets via email serve as a favorable choice for areas with limited access to the internet. Furthermore the application can be developed to provide the list of recieved signed approval requests to the women.
