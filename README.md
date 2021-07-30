@@ -14,8 +14,8 @@ This process is manually carried out by the managers by checking the work after 
 
 My solution helps two users: 
 
-The workers who will get a digital platform where they can put in their details and document their weekly progress in form of text and images
-The managers who can monitor the weekly progress and send approval receipt in the form of an e-signed document. The workers can then simply show this document to the cashier to receive their salary.
+* The workers who will get a digital platform where they can put in their details and document their weekly progress in form of text and images
+* The managers who can monitor the weekly progress and send approval receipt in the form of an e-signed document. The workers can then simply show this document to the cashier to receive their salary.
 
 ## How DocuSign comes into picture 
 
